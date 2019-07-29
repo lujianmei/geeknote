@@ -356,7 +356,7 @@ class GeekNoteConnector(object):
     storage = None
 
     def connectToEvertone(self):
-        out.preloader.setMessage("Connect to Evernote...")
+        out.preloader.setMessage("Connect to Yinxiang...")
         self.evernote = GeekNote()
 
     def getEvernote(self):

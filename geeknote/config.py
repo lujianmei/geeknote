@@ -4,15 +4,15 @@ import os
 import sys
 
 # !!! DO NOT EDIT !!! >>>
-USER_BASE_URL = "www.evernote.com"
-USER_STORE_URI = "https://www.evernote.com/edam/user"
+USER_BASE_URL = "app.yinxiang.com"
+USER_STORE_URI = "https://app.yinxiang.com/edam/user"
 CONSUMER_KEY = "skaizer-5314"
 CONSUMER_SECRET = "6f4f9183b3120801"
 
-USER_BASE_URL_SANDBOX = "sandbox.evernote.com"
-USER_STORE_URI_SANDBOX = "https://sandbox.evernote.com/edam/user"
-CONSUMER_KEY_SANDBOX = "skaizer-1250"
-CONSUMER_SECRET_SANDBOX = "ed0fcc0c97c032a5"
+USER_BASE_URL_SANDBOX = "sandbox.yinxiang.com"
+USER_STORE_URI_SANDBOX = "https://sandbox.yinxiang.com/shard/s1/notestore"
+CONSUMER_KEY_SANDBOX = "18661813293"
+CONSUMER_SECRET_SANDBOX = "910fe0ed08ad0ae7"
 # !!! DO NOT EDIT !!! <<<
 
 # can be one of: UPDATED, CREATED, RELEVANCE, TITLE, UPDATE_SEQUENCE_NUMBER
@@ -34,12 +34,12 @@ APP_DIR = os.path.join(os.getenv("HOME") or os.getenv("USERPROFILE"),  ".geeknot
 ERROR_LOG = os.path.join(APP_DIR, "error.log")
 
 # Set default system editor
-DEF_UNIX_EDITOR = "nano"
+DEF_UNIX_EDITOR = "emacs"
 DEF_WIN_EDITOR = "notepad.exe"
 EDITOR_OPEN = "WRITE"
 
-DEV_MODE = False
-DEBUG = False
+DEV_MODE = True
+DEBUG = True
 
 # Url view the note
 NOTE_URL = "https://%domain%/Home.action?#n=%s"
